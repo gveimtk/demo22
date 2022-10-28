@@ -1,0 +1,27 @@
+const request = require('request')
+request({
+    url: 'https://i.hzmbus.com/webh5api/manage/query.route',
+    json: true,
+    headers: {
+        // 'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJla2p0X2lzcyIsImlhdCI6MTY2NDUwMjUzMCwiZXhwIjoxNjY0NTA5NzMwLCJhdWQiOiJla2p0X2NsaWVudF9hdWQiLCJzdWIiOiJla2p0X2NsaWVudF9zdWIiLCJuYmYiOjE2NjQ1MDI1MzAsImp0aSI6ImVranRfanRpXzE2NjQ1MDI1MzAiLCJkYXRhIjoibGdXS0g4bGlRWUJnTjJoS1ptMTh3RmV3V1VRQUhVQ05PWXJlWVd5XC92VU1IVXNNeXVNMVZwVkNDb1YxNFpTcmREbk9YVkhKVldIc0xJaUpZd2drQkhFd1pCTFFvaWNtWnZMOXMyTFYrb0NSNlNVMGhUU1l6dDBqR3ZpZkxjbFhxeitXSWp6OUdIZ09aaHFpbTA0Q1wvZWVKd3pHd3RSMGtiU2tDcFRnY0dvNlFHMW1idVJpYlp0WmFjZHZNUlZLbnU2TVNFNWZjdkpYUjI0MmR1V3lzZDVKMGFGOXVmNGJ5d0RHaktENW1RVHc2VzdjR0MrU2tvekhERmZvR1F2VEhidDNrUHQ4clh1RmJXUnRyZ2VhNXVBNlIzTnozRm9zUnVDaTR3SlVLWlJWN1hBUmQ4YnNZWVwvQnNqSkJZSFhkbWxtNDF3eXhEbTRYbmhFazlybkgwdExGN0RXUnRTcnJ3SCtNOWRxN0IxRk8yWkpwb2FUdlFWcThYclhLQUUxSGt2K1BoQlE1V0NSV0lSc3JFZStjdzB1ZERCZmhtRlU0empHS3BvamxcL1wvTEQ4UXpoXC9Xb0wwbFhZakJKOG1cL0VFOWppVGgwaWZadldXZ25rMlwvdGs4REpydFM3S0ZNVExXUXo0RDNzZHlCM3pIOTFneDRFMlwvcXhIbmlZaWtCc3VrVGNLeWhXNmsxVXExUzMxK29lblJZVXpKV0Z3N0x6RGlsNlpZZ1gwcnUydTVrRXNFbW43SWVpYUY0dGN5Y1RIenJkN2FabFR2MGtWYlgxQVZGdjlGSXZPdVpyOGpVTzR6aTUrS3JvSmVIdmpVNzcrbDRUVWVDeEdLWTA2WmczQXc5cmFmajArNVM0SFl3c0IyRDlLa3Ywd0ZuQ0RGS0hrWklwcVBRbDB2b1RcL3o2TmNzNnlmR1l1bEFMZEY3TzUrcTFIMVZLQ3dsMjBhZ0RnYjlvYTR0TkVrSVFaVml6TEkxWW9Na1dMVmV1cHhQZ2g4WlcxVlJuTUlhSXdzQk4rS1pXUG9nN3NZbmRKWG94dTNRa3dNQ2txVXJUZFRIbDNlYTVHZXc0RTlUQU8rR1VuRzM2TTFjaFNSXC95bDdJSStjZUpqM253a0RhclNja2plTThOcWQ3TGgyemJxWjUrN0RyNDhnaGd6YkF1ZXMwVVQzREx6ZGVUMTN4YUoxcmZUejRoSlRpNzM3Z0hTbVVWSVwvWFVWbittdXIwZloyWlpKWFNTUFpCWHg3MWIzcVA0SnJNTEIrNW92N3BBanh5Q1wveCtsMVN1UUpQbEJFd090S0o4b2t1Zkl3XC9GWk1vamtWWjBzUDFvT3JCamx6WFRnZkVGV1BCN2NseVlNWXlDQjY5R05yIn0.B2HAtEOT7oClnhO5oupyMbnReVlRnNxANY6GNsIaQRw',
+        'Cookie': ' Hm_lvt_ecfd5c356fd652f819555c3c77fd1626=1664367490,1664414725,1664502465; acw_tc=2f6a1f9c16645058051787737e71ee6d503c14c672860719ec87656199d2ea; acw_sc__v2=633657debd61381b8036898688a1c1a8ad8c65dd; PHPSESSID=21qdk50plp6ppqoj5rc10apm52; Hm_lpvt_ecfd5c356fd652f819555c3c77fd1626=1664505829'
+        ,
+        "content-type": "application/json",
+
+    },
+    body: {
+        appId
+            :
+            "HZMBWEB_HK",
+        equipment
+            :
+            "PC",
+        joinType
+            :
+            "WEB",
+        version
+            :
+            "2.7.202209.1271"
+    }
+}, (err, data, body) => console.log(body))
+module.exports = request
